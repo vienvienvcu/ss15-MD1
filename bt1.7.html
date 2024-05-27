@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // =========BAI 7=========
+//  Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử.
+// nhập phần tử số nguyên và kiểm tra xem số đó có thuộc mảng đã cho không?
+// Nếu có thuộc mảng đã cho xoá số đó khỏi mảng.
+// n = 1,8,3,18,4,5,6,9
+let n = prompt("nhap mot day so tu nhien gom so nguyen duong ")
+ let array = n.split(","); //chuyen day so nhap vao thanh mang
+ console.log(array)
+ let index = 0;
+ let a = +prompt("nhap phan tu so nguyen")
+ let b = +prompt("so luong can xoa")
+//  let check = false;
+ for(let i =0; i < array.length; i++){
+    if(+array[i]== a){
+        index = i;
+        array.splice(index,b)  
+    }
+ }
+ console.log(array); 
+    </script>
+</body>
+</html>

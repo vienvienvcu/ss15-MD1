@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // VD: -89,57,-20,36,24,75
+let a = prompt("Nhập vào đấy số bất kỳ ngắn cách bởi dấu ,");
+let convert = a.split(",");
+console.log("Chuyển đổi string sang array", convert); // convert=[-89,57,-20,36,24,75]
+
+let max = +convert[0];// khoi tao phan tu dau tien cua mang
+let maxIndex = 0;// khoi tao mot bien la vi tri 
+for(let i =0; i < convert.length; i++) {
+  if(max < +convert[i]) {
+    max = +convert[i]
+    maxIndex = i;
+  }
+}
+console.log("max :",max) ;
+console.log("max index= ", maxIndex);
+
+// let a = prompt("Nhập vào đấy số bất kỳ ngắn cách bởi dấu ,");
+// let convert = a.split(",");
+// console.log("Chuyển đổi string sang array", convert); 
+
+// let max = +convert[0];// khoi tao phan tu dau tien cua mang
+// let maxIndex = 0;// khoi tao mot bien la vi tri 
+// let TB = 0; // khoi tao bien tinh gia tri trung binh
+// let S = 0;// khoi tao tong cua day so
+// for(let i =0; i < convert.length; i++) {
+//     S += +convert[i];// dua ve dang so k pghai string
+//     TB = (S/convert.length);
+//   if(max < +convert[i]) {
+//     max = +convert[i]
+//     maxIndex = i;
+//   }
+// }
+// console.log("max :",max) ;
+// console.log("max index= ", maxIndex);
+// console.log(TB)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+ 
+// BAI TAP 2.5
+// viet chuong trinh nhap vao 2 chuoi ,
+//  sau do kiem tra xem hai chuoi co giong nhau hay k
+// a = [1,2,3,4,5]
+//  b= [1,2,3,4,5]
+
+let a = prompt("nhap vao moat day ki a");
+let arr1 = a.split(",");
+let b = prompt("nhap vao day bat ki b");
+let arr2 = b.split(",");
+let check = false;
+ for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++){
+        if(arr1[i]===arr2[j] && arr1.length === arr2.length ){
+            check = true;
+            break;
+        }
+    }
+ }
+//  hien thi ket qua
+if(check==true){
+    console.log("chuoi arr1 va arr2 giong nhau");
+}else{
+    console.log("chuoi arr1 va arr2 k ngiong nhau");
+}
+
+ 
+    </script>
+</body>
+</html>

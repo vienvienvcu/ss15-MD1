@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //  BAI 2
+    // nhap vao mot day so gom 10 phan tu
+    //  Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng 
+    // và vị trí của phần tử đó.
+    // n = 10,2,3,4,8,30,1
+    let n = prompt("nhap vao mot day so nguyen duong")
+    let array = n.split(",");
+
+    console.log("Chuyển đổi string sang array", array);
+
+    let max = array[0];
+
+    for (let i = 0; i < array.length; i++) {
+        if(max < array[i]){
+           max = array[i];
+        }     
+    }
+   console.log(max); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //   BAI 1
+    // // nhap vao mot mang gom 10 phan tu:
+    // // viet chuong trinh co bao nhieu so nguyen >=10
+    // n = [10,20,3,4,5,30,12,34]
+    let n = prompt("nhap vao mot day so nguyen duong")
+    let array = n.split(",");
+    // let min = array[0]
+    let count = 0;
+    console.log(array);
+    for(let i = 0 ; i<array.length; i++){
+        if(+array[i] >= 10){
+            count++;
+            console.log(array[i]);
+        } 
+    }
+    console.log(count);
+    </script>
+</body>
+</html>
